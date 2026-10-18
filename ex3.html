@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Exercice 3 - Formulaire d'inscription</title>
+</head>
+<body>
+    <h1>Formulaire d'inscription</h1>
+    <form action="traitement.php" method="post">
+        <table>
+            <tr>
+                <td><label >Numéro de la CIN</label></td>
+                <td><input type="text" pattern="[0-9]{8}" maxlength="8" minlength="8" inputmode="numeric" placeholder="8 chiffres" required /></td>
+            </tr>
+            <tr>
+                <td><label >Nom et prénom</label></td>
+                <td><input type="text" maxlength="40" size="40" required /></td>
+            </tr>
+            <tr>
+                <td><label >Date et heure de naissance</label></td>
+                <td><input type="datetime-local"  /></td>
+            </tr>
+            <tr>
+                <td><label >Moyenne de l'année dernière</label></td>
+                <td><input type="range"  min="0" max="20" step="0.25" value="10"  /> </td>
+            </tr>
+            <tr>
+                <td><label >Date d'inscription</label></td>
+                <td><input type="date"  /></td>
+            </tr>
+            <tr>
+                <td><label >Parcours et niveau</label></td>
+                <td>
+                    <select >
+                        <optgroup label="TC">
+                            <option >1ère année</option>
+                        </optgroup>
+                        <optgroup label="SEM">
+                            <option >2ième année</option>
+                            <option >3ième année</option>
+                        </optgroup>
+                        <optgroup label="DSI">
+                            <option >2ième année</option>
+                            <option>3ième année</option>
+                        </optgroup>
+                        <optgroup label="RSI">
+                            <option >2ième année</option>
+                            <option >3ième année</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="S'inscrire" />
+                    <input type="reset" value="Effacer" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

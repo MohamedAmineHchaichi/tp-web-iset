@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Exercice 4 - avec tableaux</title>
+</head>
+<body>
+<form action="traitement.php" method="post">
+    <fieldset>
+        <legend>Votre identité</legend>
+        <table>
+            <tr><td><label >Nom</label></td><td><input type="text" placeholder="Prénom et nom" /></td></tr>
+            <tr><td><label >Email</label></td><td><input type="email"  placeholder="exemple@domaine.com" /></td></tr>
+            <tr><td><label >Téléphone</label></td><td><input type="tel"  placeholder="par ex : +3375500000000" /></td></tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Adresse de livraison</legend>
+        <table>
+            <tr><td><label >Adresse</label></td><td><textarea  rows="5" cols="20"></textarea></td></tr>
+            <tr><td><label >Code postal</label></td><td><input type="text"  /></td></tr>
+            <tr><td><label >Pays</label></td><td><input type="text"  /></td></tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>informations CB</legend>
+        <table>
+            <tr>
+                <td colspan="2">
+                    <fieldset>
+                        <legend>Type de carte bancaire</legend>
+                        <input type="radio" name="carte" /><label >VISA</label><br />
+                        <input type="radio" name="carte"  /><label >AmEx</label><br />
+                        <input type="radio" name="carte"  /><label >Mastercard</label>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr><td><label >N° de carte</label></td><td><input type="text" /></td></tr>
+            <tr><td><label >Code sécurité</label></td><td><input type="text" /></td></tr>
+            <tr><td><label >Nom du porteur</label></td><td><input type="text"  placeholder="Même nom que sur la carte" /></td></tr>
+        </table>
+    </fieldset>
+    <fieldset><input type="submit" value="J'achète !" /></fieldset>
+</form>
+</body>
+</html>

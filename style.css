@@ -1,0 +1,52 @@
+
+body {
+    background-color: #e8eef7;
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+h1 { text-align: center; color: #1f3b63; }
+
+
+.carte {
+    position: relative;              
+    display: flex;           
+    gap: 24px;
+    align-items: center;
+    width: 600px;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 30px 24px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,.25);
+}
+
+
+.badge {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background-color: #2e9e4f;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+
+.carte img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 3px 10px rgba(14, 13, 13, 0.35);
+    transition: transform .3s;
+}
+.carte img:hover { transform: scale(1.08) rotate(3deg); }
+
+.infos h2 { margin: 0; }
+.infos h3 { margin: 8px 0; color: #444; }
+.infos ul { display: flex; gap: 10px; list-style: none; padding: 0; flex-wrap: wrap; }
+.infos li { background-color: #dbe7fb; padding: 4px 12px; border-radius: 12px; }
