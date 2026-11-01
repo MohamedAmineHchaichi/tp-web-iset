@@ -1,37 +1,125 @@
-<!doctype html>
+o<!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mon profil</title>
-    <link rel="stylesheet" href="style.css" />
-    <style>
-      ul {
-        list-style-type: circle;
-      }
-    </style>
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopStyle - Boutique en ligne</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-  <body>
-    <h1>Mon profil</h1>
-    <div class="carte">
-      <span class="badge">Disponible</span>
-      <img src="images/profil.jpg" alt="Photo de profil" />
-      <div class="infos">
-        <h2>Mohamed Amine Hchaichi</h2>
-        <h3>Étudiant en informatique</h3>
-        <p>
-          Je suis étudiant en informatique et je m'intéresse au développement
-          web et au cloud.
-        </p>
-        <h3>Mes compétences</h3>
-        <ul>
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>Git et GitHub</li>
+    <!-- Navigation -->
+    <nav>
+        <h2 class="logo">ShopStyle</h2>
+        <ul id="block" >
+            <li  class="ligne"><a href=""></a>accueil</a></li>
+            <li  class="ligne"><a href=""></a>produit</a></li>
+            <li  class="ligne"><a href=""></a>categories</a></li>
+            <li  class="ligne"><a href=""></a> command</a></li>
         </ul>
-        <p>Contact : ahmed@example.com</p>
-      </div>
-    </div>
-  </body>
+       
+    </nav>
+
+    <!-- Accueil -->
+    <header id="accueil">
+       <h1>Bienvenue chez ShopStyle</h1>
+       <p>decouvrez nos meilleurs produit aux meilleursprix</p>
+       <input id="btn" type="button" value="decouvrir les produits">
+    </header>
+
+    <!-- Produits -->
+    <section id="produits">
+        <h2 class="titre">Nos produits</h2>
+         <div id="div1">
+            <img src="chaussures.jpg" alt="">
+            <h5 class="nom">chaussures sport  </h5>
+            <p class="prix">prix : 120 dt </p>
+            <input class="cmd" type="button" value="command">
+         </div>
+         <div id="div2">
+            <img src="sac.jpg" alt="">
+            <h5 class="nom">sac a main </h5>
+            <p class="prix">prix : 85 dt </p>
+            <input class="cmd" type="button" value="command">
+         </div>
+         <div id="div3">
+            <img src="montre.jpg" alt="">
+            <h5 class="nom">montre classic   </h5>
+            <p class="prix">prix : 150 dt </p>
+            <input class="cmd" type="button" value="command">
+         </div>
+        
+    </section>
+
+    <!-- Catégories -->
+    <section id="categories">
+        <h2 class="titre">Nos catégories</h2>
+        <div id="cat">
+        <ul id="list">
+            <li>Vétements</li>
+            <li>chaussures </li>
+            <li>sacs</li>
+            <li>Accessoires</li>
+            <li>Montres</li>
+        </ul>
+        </div>
+    </section>
+
+    <!-- Tableau -->
+    <section id="tableau">
+        <h2 class="titre">Liste des prix</h2>
+        <table>
+            <tr>
+                <th>produit</th>
+                <th>categories</th>
+                <th>prix</th>
+            </tr>
+            <tr>
+                <td>chossures sport </td>
+                <td>chossures </td>
+                <td> 120 DT </td>
+            </tr>
+            <tr>
+                <td>SAC a main  </td>
+                <td>sacs </td>
+                <td> 85 DT </td>
+            </tr>
+            <tr>
+                <td> montre </td>
+                <td> accessoire  </td>
+                <td> 150 DT </td>
+            </tr>
+        </table>
+      
+    </section>
+
+    <!-- Formulaire -->
+    <section id="commande">
+        <h2 class="titre">Passer une commande</h2>
+        <form action="">
+            <label for="">nom comple :</label><br>
+            <input type="text" placeholder="votre nom " class="bb"><br>
+            <label for="">adresse email</label><br>
+            <input type="email" name="" id="" class="bb" placeholder="exemple@gmail.com"><br>
+            <label for="">choisir un profil </label><br>
+            <select name="" id="" class="bb" ><br>
+                <option value="">chossures sport</option>
+                <option value="">monte</option>
+                <option value="">sacs</option>
+            </select>
+            <label for="">quantite</label><br>
+            <input type="number" name="" id="" class="bb" ><br>
+            <label for="">adresse de laivrison :</label> <br>
+            <textarea name="" id="" class="bb" ></textarea> <br>
+            <input type="submit" id="bt" class="cmd">
+        </form>
+       
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2026 ShopStyle - Tous droits réservés</p>
+    </footer>
+
+</body>
 </html>

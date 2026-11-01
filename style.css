@@ -1,52 +1,189 @@
-
+/* Mise en forme générale */
 body {
-    background-color: #e8eef7;
-    font-family: "Segoe UI", Arial, sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
-}
-h1 { text-align: center; color: #1f3b63; }
-
-
-.carte {
-    position: relative;              
-    display: flex;           
-    gap: 24px;
-    align-items: center;
-    width: 600px;
-    max-width: 100%;
-    box-sizing: border-box;
-    padding: 30px 24px;
-    margin: 30px auto;
-    background-color: #ffffff;
-    border-radius: 16px;
-    box-shadow: 0 6px 18px rgba(0,0,0,.25);
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-
-.badge {
-    position: absolute;
-    top: 14px;
-    right: 14px;
-    background-color: #2e9e4f;
+/* Navigation */
+nav {
+    background-color: #202c45;
     color: white;
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 14px;
+    padding: 15px;
+    position: relative;
+}
+
+.logo {
+    display: inline-block;
+    margin: 5px 30px 5px 10px;
+    color: #ffb347;
+}
+
+ul#block {
+    display: inline-block;
+}
+li.ligne {
+    display: inline-block;
+    padding: 0 10px;
+}
+ul#block a:hover {
+    background-color: white;
+    color: #1152e0;
+    padding: 5px;
+}
+/* Section accueil */
+header {
+    background-color: #ffe5d9;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
 }
 
 
-.carte img {
-    width: 160px;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 50%;
-    box-shadow: 0 3px 10px rgba(14, 13, 13, 0.35);
-    transition: transform .3s;
-}
-.carte img:hover { transform: scale(1.08) rotate(3deg); }
 
-.infos h2 { margin: 0; }
-.infos h3 { margin: 8px 0; color: #444; }
-.infos ul { display: flex; gap: 10px; list-style: none; padding: 0; flex-wrap: wrap; }
-.infos li { background-color: #dbe7fb; padding: 4px 12px; border-radius: 12px; }
+
+
+
+/* Titres */
+.titre {
+    text-align: center;
+    margin: 35px 0 25px;
+    color: #202c45;
+}
+
+/* Boxes produits */
+
+
+/* Catégories */
+
+/* Formulaire */
+form {
+    width: 60%;
+    margin: 20px auto 40px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #ccc;
+    position: relative;
+}
+
+
+
+/* Pied de page */
+footer {
+    background-color: #202c45;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+.ligne{
+display:block;
+color: #f4f4f4;
+}
+#btn{
+color:white;
+background-color: chocolate;
+font-size: 17px;
+border: 2px ;
+border-radius: 5px;
+margin: 5px;
+padding: 10px;
+}
+img{
+width: 60px;
+height: 60px;
+}
+#div1{
+width: 300px;
+height: 200px;
+box-shadow: 0px 5px 5px 0px   #000000;
+background-color: rgb(255, 255, 255);
+border-radius: 10px;
+text-align: center;
+margin: 0 5%;
+display:inline-block;
+padding: 44px 19px;
+}
+#div2{
+width: 300px;
+height: 200px;
+box-shadow: 0px 5px 5px 0px   #000000;
+background-color: rgb(255, 255, 255);
+border-radius: 10px;
+text-align: center;
+margin: 0 5%;
+display:inline-block;
+padding: 44px 19px;
+
+}
+#div3{
+width: 300px;
+height: 200px;
+box-shadow: 0px 5px 5px 0px   #000000;
+background-color: rgb(255, 255, 255);
+border-radius: 10px;
+text-align: center;
+margin: 0 5%;
+display:inline-block;
+padding: 44px 19px;
+
+}
+.nom{
+color: #0a152d;
+font-size: 15px;
+font-weight: bold;
+}
+.prix{
+color: chocolate;
+font-size: 15px;
+font-weight: bold;
+}
+.cmd{
+color: #f4f4f4;
+background-color: chocolate;
+border-radius: 5px;
+border: #f4f4f4;
+width: 80px;
+height: 30px;
+}
+
+
+#cat{
+background-color: white;
+border-left: 5px chocolate solid ;
+margin-left: 300px;
+margin-right: 300px;
+
+}
+#list{
+padding: 20px;
+}
+table{
+border: 5px black;
+width: 500px;
+height: 200px;
+margin: auto;
+text-align: center;
+}
+th{
+background-color: #0a152d;
+color: #ccc;
+
+}
+th:hover{
+text-decoration: underline rgb(56, 131, 164);
+
+}
+label{
+font-weight:bold;
+}
+.bb{
+width:100%
+}
+input#bt {
+    display: block;
+    margin: auto;
+}
